@@ -1,0 +1,184 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefcfb;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+/* Cabeçalho e Menu */
+header {
+  background-color: #fff0f3;
+  border-bottom: 1px solid #f1c6d3;
+  padding: 20px 0;
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu-horizontal a {
+  text-decoration: none;
+  color: #8b6f7c;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu-horizontal a:hover {
+  color: #d27d9b;
+}
+
+/* Títulos */
+h1.titulo-centralizado {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #5c4d57;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+h1.titulo-centralizado::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #d27d9b;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+h2, h3 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #6f5f67;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+ul li a {
+  color: #8e5e4d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color: #a97164;
+}
+
+.foto-perfil {
+  display: block;
+  max-width: 240px;
+  margin: 60px auto;
+  border-radius: 10px;
+  opacity: 0.95;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Formulário de contato */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #fffaf5;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(216, 174, 163, 0.3);
+  font-family: Arial, sans-serif;
+}
+
+form label {
+  font-weight: bold;
+  color: #6d4c41;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e0cfc2;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #c48b7e;
+  background-color: #fff9f7;
+}
+
+form button {
+  background-color: #c48b7e;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #a97164;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #998a95;
+  border-top: 1px solid #f1c6d3;
+  margin-top: 40px;
+}
+header {
+  min-height: 80px;
+}
+.foto-logo {
+  display: block;
+  max-width: 240px;
+  margin: 20px 0; 
+  border-radius: 10px;
+  opacity: 0.95;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
